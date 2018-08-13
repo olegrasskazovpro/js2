@@ -8,11 +8,11 @@
        */
       (function ($) {
         /**
-         * Удаляет у класс актив и добавляет класс актив ссылке и диву
+         * Удаляет у класс актив и добавляет класс актив ссылке и DIV
          */
         $(function () {
           $('#tabs').on('click', '.tab', function () {
-            $('.active').removeClass('active'); // таки удаляем класс
+            $('.active').removeClass('active'); // удаляем класс
             $(this).addClass('active'); // добавляем класс
             $($(this).attr('href')).addClass('active') // тут добавляем класс по href
           })
