@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Tabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      (function ($) {
+        $(function () {
+          $('#tabs').on('click', '.tab', function (event) {
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+            $($(this).attr('href')).addClass('active')
+          })
+        })
+      })(jQuery);
+
+      // (function($) {
+      //   $(document).ready(function() {
+      //     $('#tabs').on('click', '.tab', function(event) {
+      //       $('.active').removeClass('active');
+      //       $(this).addClass('active');
+      //       $($(this).attr('href')).addClass('active');
+      //     });
+      //   });
+      // })(jQuery);
+    </script>
+    <style>
+      .content.active {
+        display: block;
+      }
+      .tab.active {
+        color: gold;
+      }
+      .content {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tabs">
+      <ul>
+        <li><a class="tab active" href="#content1">Tab 1</a></li>
+        <li><a class="tab" href="#content2">Tab 2</a></li>
+      </ul>
+      <div class="content active" id="content1">Content 1</div>
+      <div class="content" id="content2">Content 2</div>
+    </div>
+  </body>
+</html>
