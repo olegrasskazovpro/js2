@@ -3,25 +3,21 @@
     <title>Tabs</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+      /**
+       * Самовызывающаяся функция
+       */
       (function ($) {
+        /**
+         * Удаляет у класс актив и добавляет класс актив ссылке и диву
+         */
         $(function () {
-          $('#tabs').on('click', '.tab', function (event) {
+          $('#tabs').on('click', '.tab', function () {
             $('.active').removeClass('active');
             $(this).addClass('active');
             $($(this).attr('href')).addClass('active')
           })
         })
       })(jQuery);
-
-      // (function($) {
-      //   $(document).ready(function() {
-      //     $('#tabs').on('click', '.tab', function(event) {
-      //       $('.active').removeClass('active');
-      //       $(this).addClass('active');
-      //       $($(this).attr('href')).addClass('active');
-      //     });
-      //   });
-      // })(jQuery);
     </script>
     <style>
       .content.active {
