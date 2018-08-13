@@ -14,7 +14,7 @@
           $('#tabs').on('click', '.tab', function () {
             $('.active').removeClass('active'); // удаляем класс
             $(this).addClass('active'); // добавляем класс
-            $($(this).attr('href')).addClass('active')
+            $($(this).attr('href')).addClass('active') // тут добавляем класс по href
           })
         })
       })(jQuery);
