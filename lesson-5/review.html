@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+        textarea {
+            padding: 15px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .main>div {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Отзывы</h1>
+<div class="main">
+    <div id="frontend">
+        <div id="review_list">тут отзывы</div>
+        <h2>Оставьте свой отзыв</h2>
+        <form action="send.php">
+            <textarea cols="60" rows="5" placeholder="Напишите ваш отзыв тут"></textarea>
+            <button id="send">Отправить</button>
+        </form>
+    </div>
+    <div id="backend">
+        <h2>Админка отзывов</h2>
+        <div id="moderate"></div>
+    </div>
+</div>
+</body>
+</html>
