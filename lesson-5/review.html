@@ -21,12 +21,32 @@
             padding: 15px;
         }
 
+        button {
+            float: right;
+        }
+
         .main {
             display: flex;
         }
 
         .main>div {
             flex: 1;
+            padding: 15px;
+        }
+
+        .main>div:first-child {
+            border-right: 1px solid brown;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+            background-color: #f8ffb3;
+            border: 1px dashed gray;
+            padding: 10px;
         }
 
     </style>
@@ -35,7 +55,7 @@
 <h1>Отзывы</h1>
 <div class="main">
     <div id="frontend">
-        <div id="review_list">тут отзывы</div>
+        <div data-name = 'comments'>тут отзывы</div>
         <h2>Оставьте свой отзыв</h2>
         <form action="send.php">
             <textarea cols="60" rows="5" placeholder="Напишите ваш отзыв тут"></textarea>
@@ -43,9 +63,16 @@
         </form>
     </div>
     <div id="backend">
-        <h2>Админка отзывов</h2>
-        <div id="moderate"></div>
+        <h2>Модерация отзывов</h2>
+        <h3>Новые отзывы</h3>
+        <div data-name = 'add'></div>
+        <h3>Одобренные отзывы</h3>
+        <div data-name = 'submit'></div>
+        <h3>Удаленные отзывы</h3>
+        <div data-name = 'delete'></div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="review.js"></script>
 </body>
 </html>
