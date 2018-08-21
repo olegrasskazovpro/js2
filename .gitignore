@@ -62,5 +62,3 @@ typings/
 
 #WebStorm
 .idea
-lesson-4/package-lock.json
-lesson-4/package.json
