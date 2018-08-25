@@ -1,0 +1,46 @@
+{
+  "add": [],
+  "submit": [
+  ],
+  "delete": [
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "id_comment": "123",
+      "text": "Начальный отзыв тут написан. Большой такой отзыв, который хочет попасть в топ-отзывов и выиграть оскар за лучший отзыв. Привет"
+    },
+    {
+      "id": 2,
+      "id_comment": "123",
+      "text": "Второй отзыв"
+    }
+  ],
+  "sucMes": {
+    "addSuccess": {
+      "result": 1,
+      "userMessage": "Ваш отзыв был передан на модерацию"
+    },
+    "commonSuccess": {
+      "result": 1
+    }
+  },
+  "errMes": {
+    "addError": {
+      "result": 0,
+      "error_message": "Отзыв не удалось добавить"
+    },
+    "submitError": {
+      "result": 0,
+      "error_message": "Отзыв не удалось одобрить"
+    },
+    "deleteError": {
+      "result": 0,
+      "error_message": "Отзыв не удалось удалить"
+    },
+    "commentsError": {
+      "result": 0,
+      "error_message": "Не удалось получить отзывы"
+    }
+  }
+}
